@@ -167,9 +167,10 @@
       100% { transform: translateY(-120vh); opacity: 0; }
     }
     .scroll-hint {
-      position: absolute;
-      bottom: 30px;
+      position: sticky;
+      top: 0px;
       text-align: center;
+      z-index:10;
       animation: fadeInUp 2.5s ease;
       opacity: 0.9;
     }
