@@ -104,6 +104,18 @@
     .photos img:nth-child(even) {
       animation-delay: 1.5s;
     }
+    .photos img{
+         padding: 5px;
+  border: 12px solid transparent;
+  border-image: repeating-linear-gradient(
+    45deg,
+    #ff6b81 0,
+    #ff6b81 10px,
+    #ffc0cb 10px,
+    #ffc0cb 20px
+  ) 12;
+  border-radius: 20px;
+    }
 
     .message {
       background: rgba(255,255,255,0.18);
@@ -123,6 +135,9 @@
       margin-top: 30px;
       width: 100%;
       max-width: 360px;
+    }
+    .timeline div{
+        box-shadow: #ff0f32 1px 1px 2cm 7px;
     }
 
     .event {
@@ -245,8 +260,8 @@
     <div class="photos">
       <img src="moment1.jpg" alt="Moment 1">
       <img src="moment2.jpg" alt="Moment 2">
-      <img src="moment3.jpg" alt="Moment 3">
-      <img src="moment4.jpg" alt="Moment 4">
+      <!-- <img src="moment3.jpg" alt="Moment 3">
+      <img src="moment4.jpg" alt="Moment 4"> -->
     </div>
   </section>
 
